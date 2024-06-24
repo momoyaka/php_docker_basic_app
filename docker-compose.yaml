@@ -11,6 +11,7 @@ services:
   pgadmin:
     image: dpage/pgadmin4
     env_file: ./.pga.env
+    user: '$UID:$GID'
     volumes:
       - ${PGA_STORAGE}:/var/lib/pgadmin
     ports:
