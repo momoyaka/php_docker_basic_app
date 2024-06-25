@@ -25,4 +25,9 @@ RUN apt clean && rm -rf /var/lib/apt/lists/*
 WORKDIR /var/www/
 RUN rm -rf /var/www/html /var/www/web
 
-CMD ["php-fpm", "-R"]
+COPY run.sh /usr/local/bin/run.sh
+RUN chmod +x /usr/local/bin/run.sh
+
+ENTRYPOINT ["run.sh"]
+
+#CMD ["php-fpm", "-R"]

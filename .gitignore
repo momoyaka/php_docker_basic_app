@@ -2,3 +2,7 @@
 /backups/
 /db/
 /pga/
+/app/vendor/
+/app/src/app.log
+/app/src/daemon.log
+/app/src/error.log
