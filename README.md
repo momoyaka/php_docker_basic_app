@@ -3,7 +3,7 @@ docker * (nginx + php + postgresql + pgadmin + redis)
 
 хост dev.localhost
 
-Стартует просто от docker compose up --build
+Стартует из под рута от docker compose up --build
 
 Скрипт на http://dev.localhost
 
